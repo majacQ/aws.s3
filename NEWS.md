@@ -26,6 +26,10 @@
 
 * Adapt to `DisplayName` being removed from the AWS API (#437)
 
+* `get_bucket` fetched incorrect list (repeating the first
+  chunk) if multiple fetches were required and the response included
+  the `NextMarker` entry (#414)
+
 
 # aws.s3 0.3.21
 
