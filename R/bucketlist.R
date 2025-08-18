@@ -8,7 +8,7 @@
 #' \code{bucket_list_df} and \code{bucketlist} are identical.
 #' @return A data frame of buckets. Can be empty (0 rows, 0 columns) if there are no buckets, otherwise contains typically at least columns \code{Bucket} and \code{CreationDate}.
 #' 
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html}{API Documentation}
 #' 
 #' @keywords service
 #' @seealso \code{\link{get_bucket}}, \code{\link{get_object}}

@@ -4,7 +4,7 @@
 #' @template object
 #' @template bucket
 #' @param file An R connection, or file name specifying the local file to save the object into.
-#' @param request_body For \code{select_object}, an XML request body as described in the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html}{SELECT API documentation}.
+#' @param request_body For \code{select_object}, an XML request body as described in the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html}{SELECT API documentation}.
 #' @param headers List of request headers for the REST call.
 #' @param parse_response Passed through to \code{\link{s3HTTP}}, as this function requires a non-default setting. There is probably no reason to ever change this.
 #' @param as Passed through to \code{httr::content}. 
@@ -15,7 +15,7 @@
 #' 
 #' \code{s3connection} provides a \code{\link[base]{connection}} interface to an S3 object.
 #' 
-#' \code{select_object} uses the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html}{SELECT API} to select part of a CSV or JSON object. This requires constructing and passing a fairly tedious request body, which users will have to construct themselves according to the documentation.
+#' \code{select_object} uses the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html}{SELECT API} to select part of a CSV or JSON object. This requires constructing and passing a fairly tedious request body, which users will have to construct themselves according to the documentation.
 #'
 #' Some users may find the raw vector response format of \code{get_object} unfamiliar. The object will also carry attributes, including \dQuote{content-type}, which may be useful for deciding how to subsequently process the vector. Two common strategies are as follows. For text content types, running \code{\link[base]{charToRaw}} may be the most useful first step to make the response human-readable. Alternatively, converting the raw vector into a connection using \code{\link[base]{rawConnection}} may also be useful, as that can often then be passed to parsing functions just like a file connection would be.
 #'
@@ -70,9 +70,9 @@
 #' }
 #' @return If \code{file = NULL}, a raw object. Otherwise, a character string containing the file name that the object is saved to.
 #' @references
-#'  \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html}{API Documentation: GET Object}
-#'  \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html}{API Documentation: GET Object torrent}
-#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html}{API Documentation: SELECT Object}
+#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html}{API Documentation: GET Object}
+#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html}{API Documentation: GET Object torrent}
+#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html}{API Documentation: SELECT Object}
 #' @seealso \code{\link{get_bucket}}, \code{\link{object_exists}}, \code{\link{head_object}}, \code{\link{put_object}}, \code{\link{delete_object}}
 #' @export
 get_object <- 
@@ -163,7 +163,7 @@ function(
 #' @template dots
 #'
 #' @return Something.
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGETtorrent.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTorrent.html}{API Documentation}
 #' @export
 get_torrent <- function(object, bucket, ...) {
     if (missing(bucket)) {

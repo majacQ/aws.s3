@@ -31,7 +31,7 @@
 #' }
 #' 
 #' @references 
-#'  \href{http://docs.aws.amazon.com/cli/latest/reference/s3/sync.html}{aws s3 sync command line}
+#'  \href{https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html}{aws s3 sync command line}
 #' @seealso \code{\link{get_bucket}}, \code{\link{put_object}}, , \code{\link{save_object}}
 #' @importFrom tools md5sum
 #' @export

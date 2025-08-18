@@ -11,7 +11,7 @@
 #' @template dots
 #'
 #' @return Something...
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html}{API Documentation}
 #' @export
 copy_object <- function(from_object, to_object = from_object, from_bucket, to_bucket, headers = list(), ...) {
     from_bucket <- get_bucketname(from_bucket)

@@ -5,7 +5,7 @@
 #' @template dots
 #'
 #' @return A character string containing the region, if one has been set.
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETlocation.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLocation.html}{API Documentation}
 #' @export
 get_location <- function(bucket, ...){
     r <- s3HTTP(verb = "GET", 

@@ -24,7 +24,7 @@
 #'   #get_bucket("this.bucket.has.dots", url_style = "virtual")
 #' }
 #'
-#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGET.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html}{API Documentation}
 #' @seealso \code{\link{bucketlist}}, \code{\link{get_object}}
 #' @export
 #' @importFrom utils tail

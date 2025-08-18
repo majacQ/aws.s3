@@ -51,7 +51,7 @@ Check if an object from an S3 bucket exists. To retrieve the object, see \code{\
 }
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html}{API Documentation: HEAD Object}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html}{API Documentation: HEAD Object}
 }
 \seealso{
 \code{\link{bucket_exists}}, \code{\link{get_object}}, \code{\link{put_object}}, \code{\link{delete_object}}

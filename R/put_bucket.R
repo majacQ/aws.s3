@@ -17,7 +17,7 @@
 #' 
 #' }
 #' @references 
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUT.html}{API Documentation}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html}{API Documentation}
 #' \href{https://awspolicygen.s3.amazonaws.com/policygen.html}{AWS Policy Generator}
 #' @seealso \code{\link{bucketlist}}, \code{\link{get_bucket}}, \code{\link{delete_bucket}}, \code{\link{put_object}}, \code{\link{put_encryption}}, \code{\link{put_versioning}}
 #' @export

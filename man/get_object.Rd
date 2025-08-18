@@ -53,7 +53,7 @@ s3connection(object, bucket, headers = list(), ...)
 
 \item{overwrite}{A logical indicating whether to overwrite \code{file}. Passed to \code{\link[httr]{write_disk}}. Default is \code{TRUE}.}
 
-\item{request_body}{For \code{select_object}, an XML request body as described in the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html}{SELECT API documentation}.}
+\item{request_body}{For \code{select_object}, an XML request body as described in the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html}{SELECT API documentation}.}
 }
 \value{
 If \code{file = NULL}, a raw object. Otherwise, a character string containing the file name that the object is saved to.
@@ -68,7 +68,7 @@ Retrieve an object from an S3 bucket. To check if an object exists, see \code{\l
 
 \code{s3connection} provides a \code{\link[base]{connection}} interface to an S3 object.
 
-\code{select_object} uses the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html}{SELECT API} to select part of a CSV or JSON object. This requires constructing and passing a fairly tedious request body, which users will have to construct themselves according to the documentation.
+\code{select_object} uses the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html}{SELECT API} to select part of a CSV or JSON object. This requires constructing and passing a fairly tedious request body, which users will have to construct themselves according to the documentation.
 
 Some users may find the raw vector response format of \code{get_object} unfamiliar. The object will also carry attributes, including \dQuote{content-type}, which may be useful for deciding how to subsequently process the vector. Two common strategies are as follows. For text content types, running \code{\link[base]{charToRaw}} may be the most useful first step to make the response human-readable. Alternatively, converting the raw vector into a connection using \code{\link[base]{rawConnection}} may also be useful, as that can often then be passed to parsing functions just like a file connection would be.
 
@@ -123,9 +123,9 @@ Higher-level functions
 }
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html}{API Documentation: GET Object}
- \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html}{API Documentation: GET Object torrent}
- \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html}{API Documentation: SELECT Object}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html}{API Documentation: GET Object}
+ \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html}{API Documentation: GET Object torrent}
+ \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html}{API Documentation: SELECT Object}
 }
 \seealso{
 \code{\link{get_bucket}}, \code{\link{object_exists}}, \code{\link{head_object}}, \code{\link{put_object}}, \code{\link{delete_object}}

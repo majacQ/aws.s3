@@ -8,7 +8,7 @@
 #' @details \code{object} can be a single object key, an object of class \dQuote{s3_object}, or a list of either.
 #'
 #' @return \code{TRUE} if successful, otherwise an object of class aws_error details if not.
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectDELETE.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html}{API Documentation}
 #' @seealso \code{\link{put_object}}
 #' @importFrom digest digest
 #' @importFrom base64enc base64encode

@@ -35,6 +35,6 @@ put_acceleration(b[[1]], "Suspended")
 }
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTaccelerate.html}{API Documentation: PUT Bucket accelerate}
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETaccelerate.html}{API Documentation: GET Bucket accelerate}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAccelerateConfiguration.html}{API Documentation: PUT Bucket accelerate}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketAccelerateConfiguration.html}{API Documentation: GET Bucket accelerate}
 }

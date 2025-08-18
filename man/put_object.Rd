@@ -28,9 +28,9 @@ put_folder(folder, bucket, ...)
 
 \item{bucket}{Character string with the name of the bucket, or an object of class \dQuote{s3_bucket}.}
 
-\item{multipart}{A logical indicating whether to use multipart uploads. See \url{http://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html}. If the content is smaller than \code{partsize} it is ignored.}
+\item{multipart}{A logical indicating whether to use multipart uploads. See \url{https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html}. If the content is smaller than \code{partsize} it is ignored.}
 
-\item{acl}{A character string indicating a \href{http://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl}{\dQuote{canned} access control list}. By default all bucket contents and objects therein are given the ACL \dQuote{private}. This can later be viewed using \code{\link{get_acl}} and modified using \code{\link{put_acl}}.}
+\item{acl}{A character string indicating a \href{https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html#canned-acl}{\dQuote{canned} access control list}. By default all bucket contents and objects therein are given the ACL \dQuote{private}. This can later be viewed using \code{\link{get_acl}} and modified using \code{\link{put_acl}}.}
 
 \item{file}{string, path to a file to store. Mutually exclusive with \code{what}.}
 
@@ -106,7 +106,7 @@ When using connections in \code{what} it is preferrable that they are either uno
 }
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html}{API Documentation}
 }
 \seealso{
 \code{\link{put_bucket}}, \code{\link{get_object}}, \code{\link{delete_object}}, \code{\link{put_encryption}}

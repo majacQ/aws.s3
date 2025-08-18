@@ -10,7 +10,7 @@
 #' @param write_disk If \code{verb = "GET"}, this is, optionally, an argument like \code{\link[httr]{write_disk}} to write the result directly to disk.
 #' @param write_fn If set to a function and \code{verb = "GET"} is used then the output is passed in chunks as a raw vector in the first argument to this function, allowing streaming output. Note that \code{write_disk} and \code{write_fn} are mutually exclusive.
 #' @param accelerate A logical indicating whether to use AWS transfer acceleration, which can produce significant speed improvements for cross-country transfers. Acceleration only works with buckets that do not have dots in bucket name.
-#' @param dualstack A logical indicating whether to use \dQuote{dual stack} requests, which can resolve to either IPv4 or IPv6. See \url{http://docs.aws.amazon.com/AmazonS3/latest/dev/dual-stack-endpoints.html}.
+#' @param dualstack A logical indicating whether to use \dQuote{dual stack} requests, which can resolve to either IPv4 or IPv6. See \url{https://docs.aws.amazon.com/AmazonS3/latest/API/dual-stack-endpoints.html}.
 #' @param parse_response A logical indicating whether to return the response as is, or parse and return as a list. Default is \code{TRUE}.
 #' @param check_region A logical indicating whether to check the value of \code{region} against the apparent bucket region. This is useful for avoiding (often confusing) out-of-region errors. Default is \code{FALSE}.
 #' @param url_style A character string specifying either \dQuote{path} (the default), or \dQuote{virtual}-style S3 URLs.

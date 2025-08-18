@@ -45,7 +45,7 @@ Get/Put/Delete bucket-level encryption settings.
 
 }
 \references{
-\href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTencryption.html}{API Documentation}
-\href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETencryption.html}{API Documentation}
-\href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETEencryption.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketEncryption.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketEncryption.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketEncryption.html}{API Documentation}
 }

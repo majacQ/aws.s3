@@ -26,7 +26,7 @@ List buckets as a data frame
 \code{bucket_list_df} and \code{bucketlist} are identical.
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTServiceGET.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html}{API Documentation}
 }
 \seealso{
 \code{\link{get_bucket}}, \code{\link{get_object}}

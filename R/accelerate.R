@@ -9,8 +9,8 @@
 #'
 #' @return For \code{get_acceleration}: If acceleration has never been enabled or suspend, the value is \code{NULL}. Otherwise, the status is returned (either \dQuote{Enabled} or \dQuote{Suspended}). For \code{put_acceleration}: If acceleration has never been enabled or suspend, the value is \code{NULL}.
 #' @references 
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTaccelerate.html}{API Documentation: PUT Bucket accelerate}
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETaccelerate.html}{API Documentation: GET Bucket accelerate}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAccelerateConfiguration.html}{API Documentation: PUT Bucket accelerate}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketAccelerateConfiguration.html}{API Documentation: GET Bucket accelerate}
 #' @examples
 #' \dontrun{
 #' b <- bucketlist()

@@ -3,7 +3,7 @@
 #' @description Get/Put/Delete the website configuration for a bucket.
 #'
 #' @template bucket
-#' @param request_body A character string containing an XML request body, as defined in the specification in the \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTwebsite.html}{API Documentation}.
+#' @param request_body A character string containing an XML request body, as defined in the specification in the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketWebsite.html}{API Documentation}.
 #' @template dots
 #'
 #' @return For \code{put_website} and \code{get_website}, a list containing the website configuration, if one has been set.
@@ -11,9 +11,9 @@
 #' An \code{aws_error} object may be returned if the request failed.
 #' 
 #' @references 
-#'  \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTwebsite.html}{API Documentation: PUT website}
-#'  \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETwebsite.html}{API Documentation: GET website}
-#'  \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETEwebsite.html}{API Documentation: DELETE website}
+#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketWebsite.html}{API Documentation: PUT website}
+#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketWebsite.html}{API Documentation: GET website}
+#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketWebsite.html}{API Documentation: DELETE website}
 #' @export
 delete_website <- function(bucket, ...){
     r <- s3HTTP(verb = "DELETE", 

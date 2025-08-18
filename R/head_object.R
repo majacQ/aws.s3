@@ -28,7 +28,7 @@
 #'   get_object("s3://myexamplebucket/mtcars")
 #' }
 #' @return \code{head_object} returns a logical. \code{object_exists} returns \code{TRUE} if bucket exists and is accessible, else \code{FALSE}. \code{object_size} returns an integer, which is \code{NA} if the request fails.
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html}{API Documentation: HEAD Object}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html}{API Documentation: HEAD Object}
 #' @seealso \code{\link{bucket_exists}}, \code{\link{get_object}}, \code{\link{put_object}}, \code{\link{delete_object}}
 #' @export
 #' @export

@@ -50,7 +50,7 @@ delete_bucket("myexamplebucket")
 }
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html}{API Documentation}
 }
 \seealso{
 \code{\link{s3saveRDS}},\code{\link{s3readRDS}}

@@ -14,7 +14,7 @@ put_notification(bucket, request_body, ...)
 
 \item{\dots}{Additional arguments passed to \code{\link{s3HTTP}}.}
 
-\item{request_body}{A character string containing an XML request body, as defined in the specification in the \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTnotification.html}{API Documentation}.}
+\item{request_body}{A character string containing an XML request body, as defined in the specification in the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html}{API Documentation}.}
 }
 \value{
 A list containing the notification configuration, if one has been set.
@@ -23,6 +23,6 @@ A list containing the notification configuration, if one has been set.
 Get/put the notification configuration for a bucket.
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETnotification.html}{API Documentation: GET}
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTnotification.html}{API Documentation: PUT}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html}{API Documentation: GET}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html}{API Documentation: PUT}
 }
