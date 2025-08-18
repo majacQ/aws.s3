@@ -25,7 +25,7 @@ Deletes one or more objects from an S3 bucket.
 \code{object} can be a single object key, an object of class \dQuote{s3_object}, or a list of either.
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectDELETE.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html}{API Documentation}
 }
 \seealso{
 \code{\link{put_object}}

@@ -13,9 +13,9 @@
 #' }
 #' 
 #' @references
-#'  \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTtagging.html}{API Documentation: PUT tagging}
-#'  \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETtagging.html}{API Documentation: GET tagging}
-#'  \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETEtagging.html}{API Documentation: DELETE tagging}
+#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketTagging.html}{API Documentation: PUT tagging}
+#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketTagging.html}{API Documentation: GET tagging}
+#'  \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketTagging.html}{API Documentation: DELETE tagging}
 #' @export
 get_tagging <- function(bucket, ...){
     r <- s3HTTP(verb = "GET", 

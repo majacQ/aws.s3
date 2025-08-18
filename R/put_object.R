@@ -5,7 +5,7 @@
 #' @param object A character string containing the name the object should have in S3 (i.e., its "object key"). If missing, an attempt is made to infer it.
 #' @param folder A character string containing a folder name. (A trailing slash is not required.)
 #' @template bucket
-#' @param multipart A logical indicating whether to use multipart uploads. See \url{http://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html}. If the content is smaller than \code{partsize} it is ignored.
+#' @param multipart A logical indicating whether to use multipart uploads. See \url{https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html}. If the content is smaller than \code{partsize} it is ignored.
 #' @template acl
 #' @param file string, path to a file to store. Mutually exclusive with \code{what}.
 #' @param headers List of request headers for the REST call. If \code{multipart = TRUE}, this only applies to the initialization call.
@@ -65,7 +65,7 @@
 #'   identical(x, s3readRDS("s3://myexamplebucket/rnorm.rds"))
 #'   }
 #' }
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUT.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html}{API Documentation}
 #' @seealso \code{\link{put_bucket}}, \code{\link{get_object}}, \code{\link{delete_object}}, \code{\link{put_encryption}}
 #' @importFrom utils head
 #' @export
@@ -347,7 +347,7 @@ complete_parts <- function(object, bucket, id, parts, ...) {
 #' @template dots
 #'
 #' @return A list containing the multipart upload information.
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/mpUploadListMPUpload.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html}{API Documentation}
 #' @export
 get_uploads <- function(bucket, ...){
     r <- s3HTTP(verb = "GET",

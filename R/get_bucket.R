@@ -24,7 +24,7 @@
 #'   #get_bucket("this.bucket.has.dots", url_style = "virtual")
 #' }
 #'
-#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGET.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html}{API Documentation}
 #' @seealso \code{\link{bucketlist}}, \code{\link{get_object}}
 #' @export
 #' @importFrom utils tail
@@ -53,12 +53,16 @@ get_bucket <- function(bucket,
                 prefix = prefix,
                 delimiter = delimiter,
                 "max-keys" = as.integer(pmin(max - as.integer(r[["MaxKeys"]]), 1000)),
-                marker = tail(r, 1)[["Contents"]][["Key"]]
+                marker = if (!is.null(r[["NextMarker"]])) r[["NextMarker"]] else tail(r[names(r) == "Contents"], 1)[["Contents"]][["Key"]]
             )
             extra <- s3HTTP(verb = "GET", bucket = bucket, query = query, parse_response = parse_response, ...)
-            new_r <- c(r, tail(extra, -5))
+            ## append only the "Contents" entries
+            new_r <- c(r, extra[names(extra) == "Contents"])
+            ## update specific entries in the result from the next batch
             new_r[["MaxKeys"]] <- as.character(as.integer(r[["MaxKeys"]]) + as.integer(extra[["MaxKeys"]]))
             new_r[["IsTruncated"]] <- extra[["IsTruncated"]]
+            new_r[["Marker"]] <- NULL ## remove any existing markers
+            new_r[["NextMarker"]] <- extra[["NextMarker"]] ## can be NULL which is fine
             attr(new_r, "x-amz-id-2") <- attr(r, "x-amz-id-2")
             attr(new_r, "x-amz-request-id") <- attr(r, "x-amz-request-id")
             attr(new_r, "date") <- attr(r, "date")

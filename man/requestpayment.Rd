@@ -21,5 +21,5 @@ A list containing the requestPayment information, if set.
 Get/Put the requestPayment subresource for a bucket.
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTrequestPaymentGET.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketRequestPayment.html}{API Documentation}
 }

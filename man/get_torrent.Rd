@@ -20,5 +20,5 @@ Something.
 Retrieves a Bencoded dictionary (BitTorrent) for an object from an S3 bucket.
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGETtorrent.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTorrent.html}{API Documentation}
 }

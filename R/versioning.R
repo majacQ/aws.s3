@@ -18,9 +18,9 @@
 #' }
 #' 
 #' @references 
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETVersion.html}{API Documentation}
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETversioningStatus.html}{API Documentation}
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTVersioningStatus.html}{API Documentation}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectVersions.html}{API Documentation}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketVersioning.html}{API Documentation}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketVersioning.html}{API Documentation}
 #' @export
 get_versions <- function(bucket, ...){
     r <- s3HTTP(verb = "GET", 

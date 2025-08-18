@@ -39,5 +39,5 @@ Copy objects between S3 buckets
 \code{copy_object} copies an object from one bucket to another without bringing it into local memory. For \code{copy_bucket}, all objects from one bucket are copied to another (limit 1000 objects). The same keys are used in the old bucket as in the new bucket.
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectCOPY.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html}{API Documentation}
 }

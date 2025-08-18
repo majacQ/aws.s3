@@ -3,13 +3,13 @@
 #' @description Get/put the notification configuration for a bucket.
 #'
 #' @template bucket
-#' @param request_body A character string containing an XML request body, as defined in the specification in the \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTnotification.html}{API Documentation}.
+#' @param request_body A character string containing an XML request body, as defined in the specification in the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html}{API Documentation}.
 #' @template dots
 #'
 #' @return A list containing the notification configuration, if one has been set.
 #' @references 
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETnotification.html}{API Documentation: GET}
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTnotification.html}{API Documentation: PUT}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html}{API Documentation: GET}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html}{API Documentation: PUT}
 #' @export
 get_notification <- function(bucket, ...){
     r <- s3HTTP(verb = "GET", 

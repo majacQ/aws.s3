@@ -18,5 +18,5 @@ A character string containing the region, if one has been set.
 Get the AWS region location of bucket.
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETlocation.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLocation.html}{API Documentation}
 }

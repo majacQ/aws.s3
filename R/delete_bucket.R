@@ -5,7 +5,7 @@
 #' @template dots
 #'
 #' @return \code{TRUE} if successful, \code{FALSE} otherwise. 
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETE.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucket.html}{API Documentation}
 #' @export
 delete_bucket <- function(bucket, ...){
     r <- s3HTTP(verb = "DELETE", 

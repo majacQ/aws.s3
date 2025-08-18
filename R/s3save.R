@@ -8,7 +8,7 @@
 #' @param envir For \code{s3save}, an R environment to save objects from; for \code{s3load}, the environment to load objects into. Default is the \code{parent.frame()} from which the function is called.
 #'
 #' @return For \code{s3save}, a logical, invisibly. For \code{s3load}, \code{NULL} invisibly.
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGET.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html}{API Documentation}
 #' @examples
 #' \dontrun{
 #' # create bucket

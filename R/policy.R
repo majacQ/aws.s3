@@ -8,8 +8,8 @@
 #' @details Bucket policies regulate who has what access to a bucket and its contents. The \code{header} argument can beused to specify \dQuote{canned} policies and \code{\link{put_bucket_policy}} can be used to specify a more complex policy. The \href{https://awspolicygen.s3.amazonaws.com/policygen.html}{AWS Policy Generator} can be useful for creating the appropriate JSON policy structure.
 #' @return For \code{get_policy}: A character string containing the JSON representation of the policy, if one has been set. For \code{delete_policy} and \code{put_policy}: \code{TRUE} if successful, \code{FALSE} otherwise. 
 #' @references 
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETpolicy.html}{API Documentation}
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETEpolicy.html}{API Documentation}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicy.html}{API Documentation}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketPolicy.html}{API Documentation}
 #' \href{https://awspolicygen.s3.amazonaws.com/policygen.html}{AWS Policy Generator}
 #' @export
 get_bucket_policy <- function(bucket, parse_response = TRUE, ...){

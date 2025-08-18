@@ -10,8 +10,8 @@
 #' @details \code{get_acl} retrieves an XML-formatted ACL for either an object (if specified) or a bucket (if specified).
 #' @return For \code{get_acl} a character string containing an XML-formatted ACL. For \code{put_acl}: if successful, \code{TRUE}.
 #' @references
-#'   \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectGETacl.html}{API Reference: GET Object ACL}
-#'   \href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUTacl.html}{API Reference: PUT Object ACL}
+#'   \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAcl.html}{API Reference: GET Object ACL}
+#'   \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html}{API Reference: PUT Object ACL}
 #' @export
 get_acl <- function(object, bucket, ...) {
     if (!missing(object)) {

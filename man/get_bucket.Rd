@@ -64,7 +64,7 @@ From the AWS doc: \dQuote{This implementation of the GET operation returns some 
 
 }
 \references{
-\href{https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGET.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html}{API Documentation}
 }
 \seealso{
 \code{\link{bucketlist}}, \code{\link{get_object}}

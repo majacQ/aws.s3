@@ -18,5 +18,5 @@ A list containing the multipart upload information.
 Get a list of multipart uploads for a bucket.
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/mpUploadListMPUpload.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html}{API Documentation}
 }

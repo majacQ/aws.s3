@@ -48,7 +48,7 @@ s3HTTP(
 
 \item{accelerate}{A logical indicating whether to use AWS transfer acceleration, which can produce significant speed improvements for cross-country transfers. Acceleration only works with buckets that do not have dots in bucket name.}
 
-\item{dualstack}{A logical indicating whether to use \dQuote{dual stack} requests, which can resolve to either IPv4 or IPv6. See \url{http://docs.aws.amazon.com/AmazonS3/latest/dev/dual-stack-endpoints.html}.}
+\item{dualstack}{A logical indicating whether to use \dQuote{dual stack} requests, which can resolve to either IPv4 or IPv6. See \url{https://docs.aws.amazon.com/AmazonS3/latest/API/dual-stack-endpoints.html}.}
 
 \item{parse_response}{A logical indicating whether to return the response as is, or parse and return as a list. Default is \code{TRUE}.}
 

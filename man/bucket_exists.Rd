@@ -18,7 +18,7 @@ bucket_exists(bucket, ...)
 Check whether a bucket exists and is accessible with the current authentication keys.
 }
 \references{
-\href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketHEAD.html}{API Documentation}
+\href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadBucket.html}{API Documentation}
 }
 \seealso{
 \code{\link{bucketlist}}, \code{\link{get_bucket}}, \code{\link{object_exists}}

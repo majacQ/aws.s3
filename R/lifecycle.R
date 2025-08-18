@@ -3,14 +3,14 @@
 #' @description Get/Put/Delete the lifecycle configuration information for a bucket.
 #'
 #' @template bucket
-#' @param request_body A character string containing an XML request body, as defined in the specification in the \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlifecycle.html}{API Documentation}.
+#' @param request_body A character string containing an XML request body, as defined in the specification in the \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html}{API Documentation}.
 #' @template dots
 #'
 #' @return For \code{get_lifecycle}: a list with lifecycle configuration, if it has been configured. For \code{delete_lifecycle}: \code{TRUE} if successful, \code{FALSE} otherwise.
 #' @references 
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlifecycle.html}{API Documentation: PUT lifecycle}
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETlifecycle.html}{API Documentation: GET lifecycle}
-#' \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketDELETElifecycle.html}{API Documentation: DELETE lifecycle}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html}{API Documentation: PUT lifecycle}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html}{API Documentation: GET lifecycle}
+#' \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketLifecycle.html}{API Documentation: DELETE lifecycle}
 #' @export
 get_lifecycle <- function(bucket, ...){
     r <- s3HTTP(verb = "GET", 

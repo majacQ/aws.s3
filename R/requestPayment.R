@@ -6,7 +6,7 @@
 #' @template dots
 #'
 #' @return A list containing the requestPayment information, if set.
-#' @references \href{http://docs.aws.amazon.com/AmazonS3/latest/API/RESTrequestPaymentGET.html}{API Documentation}
+#' @references \href{https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketRequestPayment.html}{API Documentation}
 #' @export
 get_requestpayment <- function(bucket, ...){
     r <- s3HTTP(verb = "GET", 
